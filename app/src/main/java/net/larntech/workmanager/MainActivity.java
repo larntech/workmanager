@@ -12,9 +12,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        NotificationHandler.oneOffRequest();
+//        NotificationHandler.oneOffRequest();
 
-//        NotificationHandler.periodicWorkRequest();
+        NotificationHandler.periodicWorkRequest();
 
     }
 }

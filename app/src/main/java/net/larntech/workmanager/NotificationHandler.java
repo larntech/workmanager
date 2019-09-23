@@ -76,7 +76,7 @@ public class NotificationHandler extends Worker {
     }
 
     public static void periodicWorkRequest(){
-        PeriodicWorkRequest periodicWorkRequest = new PeriodicWorkRequest.Builder(NotificationHandler.class)
+        PeriodicWorkRequest periodicWorkRequest = new PeriodicWorkRequest.Builder(NotificationHandler.class,10,TimeUnit.MINUTES)
                 .setInitialDelay(2,TimeUnit.MINUTES)
                 .setConstraints(setConstraints())
                 .build();
